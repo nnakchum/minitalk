@@ -5,20 +5,14 @@ BONUS_NAMES = server_bonus
 FT_PRINTF_DIR = ft_printf/
 FT_PRINTF = libftprintf.a
 SRC_DIR = src/
-
-# Source files
 SRCC_FILES = client.c
 SRCS_FILES = server.c
 BONUSC_FILES = client_bonus.c
 BONUSS_FILES = server_bonus.c
-
-# Add prefix for source directory
 SRCC = $(addprefix $(SRC_DIR), $(SRCC_FILES))
 SRCS = $(addprefix $(SRC_DIR), $(SRCS_FILES))
 BONUSC = $(addprefix $(SRC_DIR), $(BONUSC_FILES))
 BONUSS = $(addprefix $(SRC_DIR), $(BONUSS_FILES))
-
-# Object files
 OBJC = ${SRCC:.c=.o}
 OBJS = ${SRCS:.c=.o}
 OBJBC = ${BONUSC:.c=.o}

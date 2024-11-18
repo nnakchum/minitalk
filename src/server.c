@@ -1,5 +1,17 @@
-# include "../ft_printf/ft_printf.h"
-# include <signal.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   server.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nnakchum <nnakchum@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/16 16:36:23 by nnakchum          #+#    #+#             */
+/*   Updated: 2024/11/16 21:17:46 by nnakchum         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../ft_printf/ft_printf.h"
+#include <signal.h>
 
 void	ft_btoa(int sig)
 {

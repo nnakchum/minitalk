@@ -1,5 +1,17 @@
-# include "../ft_printf/ft_printf.h"
-# include <signal.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   client.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nnakchum <nnakchum@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/16 16:36:23 by nnakchum          #+#    #+#             */
+/*   Updated: 2024/11/16 21:17:46 by nnakchum         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../ft_printf/ft_printf.h"
+#include <signal.h>
 
 static int	ft_atoi(const char *str)
 {
@@ -39,7 +51,7 @@ void	ft_atob(int pid, char c)
 			kill(pid, SIGUSR1);
 		else
 			kill(pid, SIGUSR2);
-		usleep(500);
+		usleep(3000);
 		bit++;
 	}
 }
